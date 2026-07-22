@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sicheng Yuan | Personal Profile</title>
+<style>
+    :root {
+        --ocean-primary: #4facfe;
+        --ocean-secondary: #00f2fe;
+        --ocean-dark: #1e3c72;
+        --text-dark: #333;
+        --text-light: #666;
+        --bg-light: #f5f9ff;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+        background: var(--bg-light);
+        color: var(--text-dark);
+        line-height: 1.6;
+    }
+
+    header {
+        background: linear-gradient(135deg, var(--ocean-primary), var(--ocean-secondary));
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .profile-container {
+        max-width: 1000px;
+        margin: -60px auto 40px;
+        background: white;
+        border-radius: 16px;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .profile-top {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: #ddd;
+        flex-shrink: 0;
+    }
+
+    .profile-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .profile-info h1 {
+        font-size: 28px;
+    }
+
+    .profile-info h2 {
+        font-size: 16px;
+        font-weight: normal;
+        color: white;
+        opacity: 0.9;
+    }
+
+    section {
+        margin-top: 30px;
+    }
+
+    section h3 {
+        color: var(--ocean-dark);
+        margin-bottom: 10px;
+    }
+
+    .card {
+        background: #f9fbff;
+        padding: 20px;
+        border-radius: 12px;
+        margin-top: 10px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        color: var(--text-light);
+    }
+
+    @media (max-width: 600px) {
+        .profile-top {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Sicheng Yuan</h1>
+    <h2>Kaso</h2>
+</header>
+
+<div class="profile-container">
+
+    <div class="profile-top">
+        <div class="profile-photo">
+            <img src="photo.jpg" alt="Profile Photo" onerror="this.style.display='none'">
+        </div>
+        <div class="profile-info">
+            <h1>Sicheng Yuan</h1>
+            <p>High School Student | Photographer | Explorer</p>
+        </div>
+    </div>
+
+    <section>
+        <h3>About Me</h3>
+        <div class="card">
+            <p>
+                I am a high school student with a strong passion for both creative expression and analytical thinking. My primary interest lies in photography, where I have explored diverse cultures and landscapes across countries such as China, Singapore, Japan, and France. Through my lens, I aim to capture authentic stories and meaningful moments, often working independently to fully immerse myself in the creative process.
+            </p>
+            <br>
+            <p>
+                Beyond photography, I have a deep interest in economics and mathematics. I enjoy tackling challenging problems, participating in academic discussions, and continuously pushing my intellectual limits. My dedication has led me to compete in contests such as AMC and BMO, where I was honored with a Gold Award.
+            </p>
+            <br>
+            <p>
+                I am also actively engaged in community service. Volunteering at a local library and traveling to rural Yunnan to photograph children have allowed me to connect with different communities and use photography as a storytelling tool. Currently, I am planning a photography exhibition to share my work and the stories behind each image.
+            </p>
+            <br>
+            <p>
+                Outside academics, I enjoy playing basketball as part of my school team. I am also a fan of K-pop, especially Babymonster, and greatly admire Ahyeon. Additionally, I have a unique interest in collecting Crocin products.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h3>Skills & Interests</h3>
+        <div class="card">
+            <ul>
+                <li>Photography (Sony & Hasselblad equipment)</li>
+                <li>Mathematics & Economics</li>
+                <li>Basketball (School Team Player)</li>
+                <li>K-pop Enthusiast</li>
+                <li>Creative Storytelling</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h3>Achievements</h3>
+        <div class="card">
+            <ul>
+                <li>BMO Gold Award</li>
+                <li>AMC Participant</li>
+                <li>Recognized Photography Work Online</li>
+                <li>Upcoming Photography Exhibition Organizer</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h3>Contact</h3>
+        <div class="card">
+            <p>Email: <a href="mailto:sichengyuan7@gmail.com">sichengyuan7@gmail.com</a></p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Sicheng Yuan</p>
+</footer>
+
+</body>
+</html>
